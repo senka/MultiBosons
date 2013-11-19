@@ -1,0 +1,10 @@
+void prepareInputForNewF(){
+
+  TFile * file_signal=new TFile("/afs/cern.ch/work/s/senka/aTGC_ZZ_7TeV/fgZzzMix_mmmm_f5_aTGC_final.root","read");
+  
+  double bins[6];
+  TH1D * histo_SM=new TH1D("histo","histo",5,bins);
+  muMuMuMuEventTreeMerged->Draw("mass>>histo_SM","weightnoPU*(f5z_grid==0.&&f5g_grid==0.)");
+  
+
+}

@@ -345,7 +345,7 @@ MmgFsrFilter::filter(edm::Event& iEvent, const edm::EventSetup& iSetup)
     if (seedRecoFlag == EcalRecHit::kOutOfTime) continue;
     ++photonsPassedPerEvent["5.3  seed reco flag"];
 
-    int sLevel = photon.userInt("photonUserData:seedSeverityLevel");
+    //int sLevel = photon.userInt("photonUserData:seedSeverityLevel");
     //if (sLevel == EcalSeverityLevelAlgo::kWeird ||
     //    sLevel == EcalSeverityLevelAlgo::kBad
     //    ) continue;
